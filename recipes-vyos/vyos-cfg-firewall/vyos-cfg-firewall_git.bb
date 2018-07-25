@@ -39,11 +39,6 @@ EXTRA_OECONF = "\
 	"
 
 do_install_append() {
-	# TODO: this needs to get cleaned up upstream: this package provides templates
-	# for vxlan which conflict with files from the vyos-vxlan package. For now we
-	# delete them here
-	rm -rf ${D}/opt/vyatta/share/vyatta-cfg/templates/interfaces/vxlan
-
 	install -d ${D}/opt/vyatta/bin/sudo-users
 	ln -sf /opt/vyatta/sbin/vyatta-ipset.pl ${D}/opt/vyatta/bin/sudo-users
 

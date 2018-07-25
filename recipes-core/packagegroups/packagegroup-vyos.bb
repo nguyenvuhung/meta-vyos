@@ -46,10 +46,6 @@ VYOS_WWAN = " \
     virtual/vyos-wwan \
     "
 
-VYOS_TUNNEL = " \
-    vyos-vxlan \
-    "
-
 VYOS_VPN = " \
     vyos-cfg-vpn \
     vyos-op-vpn \
@@ -115,7 +111,6 @@ RDEPENDS_${PN} = " \
     ${@bb.utils.contains('DISTRO_FEATURES', 'vyos-wlan', '${VYOS_WLAN}', '',d)} \
     ${@bb.utils.contains('DISTRO_FEATURES', 'vyos-routing', '${VYOS_ROUTING}', '',d)} \
     ${@bb.utils.contains('DISTRO_FEATURES', 'vyos-wwan', '${VYOS_WWAN}', '',d)} \
-    ${@bb.utils.contains('DISTRO_FEATURES', 'vyos-tunnel', '${VYOS_TUNNEL}', '',d)} \
     ${@bb.utils.contains('DISTRO_FEATURES', 'vyos-vpn', '${VYOS_VPN}', '',d)} \
     ${@bb.utils.contains('DISTRO_FEATURES', 'vyos-qos', '${VYOS_QOS}', '',d)} \
     ${@bb.utils.contains('DISTRO_FEATURES', 'vyos-pppoe', '${VYOS_PPPOE}', '',d)} \

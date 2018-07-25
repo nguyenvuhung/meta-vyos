@@ -99,11 +99,6 @@ EXTRA_OECONF = "\
 ISSUEDIR = "${THISDIR}/files/issue"
 
 do_install_append () {
-	# TODO: this needs to get cleaned up upstream: this package provides templates
-	# for vxlan which conflict with files from the vyos-vxlan package. For now we
-	# delete them here
-	rm -rf ${D}/opt/vyatta/share/vyatta-cfg/templates/interfaces/vxlan
-
 	# copy MIB files...
 	install -d ${D}/usr/share/snmp/mibs
 	install ${S}/mibs/BGP4-MIB.txt ${D}/usr/share/snmp/mibs
