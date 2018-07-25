@@ -29,7 +29,6 @@ VYOS_NET = " \
     vyos-lldp \
     vyos-igmpproxy \
     vyos-zone \
-    vyos-watchdog \
     "
 
 VYOS_WLAN = " \
