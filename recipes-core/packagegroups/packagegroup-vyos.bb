@@ -18,7 +18,6 @@ VYOS_CONFIG = " \
     vyos-config-migrate \
     vyos-config-mgmt \
     vyos-util \
-    vyos-cron \
     "
 
 VYOS_NET = " \
