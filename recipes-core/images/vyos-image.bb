@@ -24,5 +24,5 @@ python do_rootfs_append () {
 
 add_vyos_home_dir() {
     install -d ${IMAGE_ROOTFS}/home
-#    install -o vyos -g users -d ${IMAGE_ROOTFS}/home/vyos
+    install -o vyos -g users -d ${IMAGE_ROOTFS}/home/vyos
 }

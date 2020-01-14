@@ -7,11 +7,10 @@ RDEPENDS_${PN} += "squid"
 LICENSE = "GPLv2"
 PR = "r2"
 
-TODO: does not include VyOS patches! This is supposed to cause an error.
+#TODO: does not include VyOS patches! This is supposed to cause an error.
 
 SRC_URI = " \
-	http://www.squidguard.org/Downloads/Devel/squidGuard-${PV}.tar.gz;name=tar \
-	file://fix-configure-issues.patch \
+	https://fossies.org/linux/www/squidGuard-${PV}.tar.gz;name=tar \
 	file://squidGuard.conf \
 	"
 SRC_URI[tar.md5sum] = "85216992d14acb29d6f345608f21f268"
