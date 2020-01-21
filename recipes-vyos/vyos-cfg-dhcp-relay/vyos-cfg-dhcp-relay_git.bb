@@ -1,12 +1,12 @@
 SUMMARY = "VyOS DHCP relay configuration mechanism"
-HOMEPAGE = "https://github.com/vyos/vyatta-cfg-dhcp-relay"
+HOMEPAGE = "https://github.com/vyos-legacy/vyatta-cfg-dhcp-relay"
 SECTION = "vyos/dhcp"
 
 
 LICENSE = "GPLv2"
 LIC_FILES_CHKSUM = "file://COPYING;md5=eb723b61539feef013de476e68b5c50a"
 
-SRC_URI = "git://github.com/vyos/vyatta-cfg-dhcp-relay.git;branch=current;protocol=https \
+SRC_URI = "git://github.com/vyos-legacy/vyatta-cfg-dhcp-relay.git;branch=current;protocol=https \
 	  "
 
 # snapshot from Aug 14, 2017:

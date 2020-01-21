@@ -81,16 +81,16 @@ FILES_${PN}-server += " \
 #
 # This workaround isn't perfect: the bind 9.9.11 libraries will be build
 # in ${S}/bind rather than the build directory. But it seems to work for now.
-EXTRA_OECONF += " \
-    --without-libbind \
-	"
+#EXTRA_OECONF += " \
+#    --without-libbind \
+#	"
 
-SRC_URI_remove = " \
-    file://0008-tweak-to-support-external-bind.patch \
-    "
+#SRC_URI_remove = " \
+#    file://0008-tweak-to-support-external-bind.patch \
+#    "
 
 # prevent parallel make because we need those libraries to be build first...
 PARALLEL_MAKE = "-j 1"
 
 # this means we no longer depend on the external bind
-DEPENDS_remove = "bind"
+#DEPENDS_remove = "bind"
